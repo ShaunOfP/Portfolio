@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
-
+  navigateToGithub(){
+    window.open("https://github.com/ShaunOfP", "_blank");
+  }
 }

@@ -14,12 +14,13 @@
             <button>Let's talk!</button>
         </div>
     </div>
+    <img class="background-form" src="./assets/img/main-background-form.svg">
     <span class="scroll-down">Scroll down <img src="./assets/img/arrow-down.svg"></span>
     <div class="main-bottom">
         <div class="purple-line"> </div>
-        <img src="./assets/img/github.svg" alt="github">
-        <img src="./assets/img/mail.svg" alt="mail">
-        <img src="./assets/img/linkedin.svg" alt="linkedIn">
+        <img (click)="navigateToGithub()" class="main-icon" src="./assets/img/github.svg" alt="github">
+        <img class="main-icon" src="./assets/img/mail.svg" alt="mail">
+        <img class="main-icon" src="./assets/img/linkedin.svg" alt="linkedIn">
         <a href="">svenroesgen&#64;gmail.com</a>
     </div>
 </section>
