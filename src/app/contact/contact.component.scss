@@ -1,14 +1,18 @@
-section{
+section {
     color: white;
     background-color: #141D2F;
     display: flex;
-    >div{
+    gap: 150px;
+    padding-bottom: 180px;
+    padding-top: 240px;
+
+    >div {
         display: flex;
     }
 }
 
-.purple-line{
-    margin-top: 54px;
+.purple-line {
+    margin-top: 60px;
     background-color: #9747FF;
     width: 50px;
     height: 4px;
@@ -17,20 +21,29 @@ section{
     border-bottom-right-radius: 4px;
 }
 
-p{
+p {
     margin: 0;
 }
 
-.contact-headline{
-    font-weight: 700;
-    font-size: 90px;
+.contact-left-container{
+    padding-left: 50px;
 }
 
-.contact-question{
+.contact-headline {
+    font-weight: 700;
+    font-size: 90px;
+    padding-bottom: 85px;
+}
+
+.contact-question {
     font-weight: 700;
     font-size: 32px;
 }
 
-.font-size-16{
+.font-size-16 {
     font-size: 16px;
+}
+
+app-contactform{
+    margin-top: 230px;
 }

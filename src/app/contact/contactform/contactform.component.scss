@@ -1,4 +1,122 @@
-div{
-    height: 617px;
-    width: 504px;
+.form-container {
+    width: 617px;
+    height: 504px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    >form {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+p {
+    margin: 0 0 0 40px;
+}
+
+.form-input {
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #9747FF;
+    padding: 15px 25px 15px 25px;
+    background-color: #141D2F;
+    color: white;
+    font-size: 16px;
+}
+
+textarea {
+    height: 202px;
+    background-color: #141D2F;
+    border: 1px solid #9747FF;
+    border-radius: 10px;
+    padding: 15px 25px 15px 25px;
+    color: white;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+.container {
+    >input {
+        height: 0;
+        width: 0;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked {
+            display: block;
+        }
+
+        &:checked~.checkmark:after {
+            display: block;
+        }
+    }
+}
+
+.purple-text {
+    color: #9747FF;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.checkmark {
+    position: relative;
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border: 2px solid #70E61C;
+    border-radius: 5px;
+    top: -50px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(51, 51, 255, 0.4);
+
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+}
+
+button {
+    height: 58px;
+    width: 253px;
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+    color: white;
+    font-size: 23px;
+    border: none;
+
+    &:enabled {
+        background-color: #70E61C;
+        transition: scale 0.1s;
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.3;
+            background-color: #9747FF;
+        }
+    }
+
+    &:disabled {
+        background-color: #B6B6B6;
+    }
 }
