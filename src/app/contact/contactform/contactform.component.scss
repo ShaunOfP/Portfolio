@@ -25,6 +25,11 @@ p {
     background-color: #141D2F;
     color: white;
     font-size: 16px;
+
+    &:hover {
+        border: 1px solid #70E61C;
+        cursor: pointer;
+    }
 }
 
 textarea {
@@ -36,6 +41,11 @@ textarea {
     color: white;
     font-size: 16px;
     font-family: 'Poppins';
+
+    &:hover {
+        border: 1px solid #70E61C;
+        cursor: pointer;
+    }
 }
 
 ::placeholder {
@@ -63,7 +73,8 @@ textarea {
 
 .purple-text {
     color: #9747FF;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
 }
@@ -91,7 +102,7 @@ textarea {
     }
 }
 
-.btn-container{
+.btn-container {
     display: flex;
     justify-content: center;
     margin-top: 27px;
