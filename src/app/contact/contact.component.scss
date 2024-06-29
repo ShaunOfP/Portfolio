@@ -1,10 +1,29 @@
 section {
-    color: white;
     background-color: #141D2F;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    >img{
+        height: 39px;
+        width: 39px;
+        margin-bottom: 90px;
+        margin-right: 100px;
+        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(130%) contrast(105%);
+        -webkit-transition : -webkit-filter 100ms linear;
+
+        &:hover{
+            cursor: pointer;
+            filter: none;
+        }
+    }
+}
+
+.contact-container{
     display: flex;
     gap: 150px;
     padding-bottom: 180px;
     padding-top: 240px;
+    color: white;
 
     >div {
         display: flex;
