@@ -4,7 +4,8 @@ section {
     display: flex;
     justify-content: space-between;
     padding-bottom: 175px;
-    >div{
+
+    >div {
         width: 721px;
         display: flex;
         flex-direction: column;
@@ -12,7 +13,7 @@ section {
     }
 }
 
-.icon-row{
+.icon-row {
     display: flex;
     width: 844px;
     flex-wrap: wrap;
@@ -31,6 +32,19 @@ section {
     >img {
         height: 60px;
         width: 60px;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+
+        &:hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+        }
     }
 
     >p {
@@ -41,7 +55,7 @@ section {
     }
 }
 
-.my-skills-right-side{
+.my-skills-right-side {
     display: flex;
     align-items: center;
     width: 571px;
@@ -50,27 +64,28 @@ section {
 .my-skills-section {
     display: flex;
     gap: 42px;
-    >div{
-        >p{
+
+    >div {
+        >p {
             margin: 0;
             color: white;
         }
     }
 }
 
-.my-skills-headline{
+.my-skills-headline {
     font-size: 90px;
     font-weight: 700;
     text-align: right;
 }
 
-.my-skills-description{
+.my-skills-description {
     font-size: 16px;
     font-weight: 400;
     text-align: right;
 }
 
-button{
+button {
     background-color: #70E61C;
     height: 58px;
     width: 200px;
@@ -80,7 +95,8 @@ button{
     color: white;
     font-size: 23px;
     transition: scale 0.1s;
-    &:hover{
+
+    &:hover {
         background-color: #9747FF;
         scale: 1.2;
         cursor: pointer;
@@ -95,4 +111,29 @@ button{
     border: none;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+}
+
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
 }
