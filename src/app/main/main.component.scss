@@ -2,6 +2,7 @@ section {
     height: 100vh;
     width: 100%;
     background-color: #141D2F;
+    padding-top: 110px;
 
     >div {
         display: flex;
@@ -11,6 +12,7 @@ section {
 .main-picture {
     height: 705px;
     width: 646px;
+    margin-left: 47px;
 }
 
 .headline {
@@ -112,7 +114,7 @@ button {
 .background-form {
     width: 100%;
     position: absolute;
-    top: 260px;
+    top: 240px;
     z-index: 0;
 }
 
