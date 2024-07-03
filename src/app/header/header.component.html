@@ -1,8 +1,23 @@
 <section>
     <span>Sven</span>
-    <div>
-        <a href="">About me</a>
-        <a href="">Skills</a>
-        <a href="">Portfolio</a>
+    <div class="header-btn-container">
+        <div class="line-btn-container">
+            <a (click)="activateBtn(1)" href="#">About me</a>
+            @if(line1){
+            <div id="line1" class="purple-line"></div>
+            }
+        </div>
+        <div class="line-btn-container">
+            <a (click)="activateBtn(2)" href="#">Skills</a>
+            @if(line2){
+            <div id="line2" class="purple-line"></div>
+            }
+        </div>
+        <div class="line-btn-container">
+            <a (click)="activateBtn(3)" href="#">Portfolio</a>
+            @if(line3){
+            <div id="line3" class="purple-line"></div>
+            }
+        </div>
     </div>
 </section>
