@@ -3,16 +3,17 @@ section {
     align-items: center;
     gap: 35px;
 
-    >img {
-        width: 620px;
-        height: 339px;
-    }
-
     >div {
         display: flex;
         flex-direction: column;
         gap: 35px;
         width: 513px;
+        align-items: end;
+    }
+
+    >img {
+        width: 620px;
+        height: 339px;
     }
 }
 
@@ -20,6 +21,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: end;
 }
 
 h3 {
@@ -40,6 +42,7 @@ p {
     margin: 0;
     color: white;
     font-size: 16px;
+    text-align: end;
 }
 
 .project-btns-container {
