@@ -10,8 +10,9 @@ import { FormsModule, NgForm } from '@angular/forms';
   styleUrl: './contactform.component.scss'
 })
 export class ContactformComponent {
+  isChecked: boolean = false;
   http = inject(HttpClient);
-  
+
   contactData = {
     name: "",
     email: "",
@@ -48,5 +49,9 @@ export class ContactformComponent {
 
       ngForm.resetForm();
     }
+  }
+
+  toggleCheckbox() {
+    this.isChecked = !this.isChecked;
   }
 }

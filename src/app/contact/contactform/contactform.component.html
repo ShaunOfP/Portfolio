@@ -9,7 +9,7 @@
     <div>
         <div>
             <div class="custom-checkbox">
-                <input type="checkbox" id="checkbox">
+                <input type="checkbox" id="checkbox" [(ngModel)]="isChecked">
                 <label for="checkbox">I've read the <a class="purple-text">privacy policy</a> and agree to the
                     processing of my data as outlined.</label>
             </div>
@@ -24,7 +24,7 @@
             }
         </div>
         <div class="btn-container">
-            <button type="submit" disabled>Send message :)</button>
+            <button type="submit" disabled [disabled]="!isChecked">Send message :)</button>
         </div>
     </div>
 </div>
