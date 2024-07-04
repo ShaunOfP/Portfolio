@@ -1,23 +1,17 @@
 <section>
     <span>Sven</span>
     <div class="header-btn-container">
-        <div class="line-btn-container">
-            <a (click)="activateBtn(1)" href="#">About me</a>
-            @if(line1){
-            <div id="line1" class="purple-line"></div>
-            }
+        <div (click)="toggleClass(1)" class="line-btn-container">
+            <a [ngClass]="{'activated-color': isClicked}" href="#">About me</a>
+            <div [ngClass]="{'activated-visibility': isClicked}" id="line1" class="purple-line"></div>
         </div>
-        <div class="line-btn-container">
-            <a (click)="activateBtn(2)" href="#">Skills</a>
-            @if(line2){
-            <div id="line2" class="purple-line"></div>
-            }
+        <div (click)="toggleClass(2)" class="line-btn-container">
+            <a [ngClass]="{'activated-color': isClicked2}" href="#">Skills</a>
+            <div [ngClass]="{'activated-visibility': isClicked2}" id="line2" class="purple-line"></div>
         </div>
-        <div class="line-btn-container">
-            <a (click)="activateBtn(3)" href="#">Portfolio</a>
-            @if(line3){
-            <div id="line3" class="purple-line"></div>
-            }
+        <div (click)="toggleClass(3)" class="line-btn-container">
+            <a [ngClass]="{'activated-color': isClicked3}" href="#">Portfolio</a>
+            <div [ngClass]="{'activated-visibility': isClicked3}" id="line3" class="purple-line"></div>
         </div>
     </div>
 </section>

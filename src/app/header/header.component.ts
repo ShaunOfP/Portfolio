@@ -1,27 +1,34 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  line1 = false;
-  line2 = false;
-  line3 = false;
+  isClicked: boolean = false;
+  isClicked2: boolean = false;
+  isClicked3: boolean = false;
 
-  activateBtn(id: number) {
+  toggleClass(id: number) {
     switch (id) {
       case id = 1:
-        console.log(1);
+        this.isClicked = !this.isClicked;
+        this.isClicked2 = false;
+        this.isClicked3 = false;
         break;
       case id = 2:
-        console.log(2);
+        this.isClicked2 = !this.isClicked2;
+        this.isClicked = false;
+        this.isClicked3 = false;
         break;
       case id = 3:
-        console.log(3);
+        this.isClicked3 = !this.isClicked3;
+        this.isClicked2 = false;
+        this.isClicked = false;
         break;
     }
   }
