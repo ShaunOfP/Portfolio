@@ -10,16 +10,29 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+}
 
-        >a {
-            position: relative;
-            color: white;
+.imprint-container {
+    position: relative;
+    color: white;
 
-            &:hover {
-                cursor: pointer;
-            }
+    >a{
+        &:hover {
+            cursor: pointer;
         }
     }
+}
+
+.blue-line{
+    background-color: #1CDAE6;
+    width: 58px;
+    height: 2px;
+    border: none;
+}
+
+.hidden{
+    visibility: hidden;
 }
 
 .footer-info {

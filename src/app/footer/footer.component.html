@@ -9,6 +9,9 @@
                 <img class="footer-icon" src="./assets/img/linkedin.svg" alt="linkedIn">
             </div>
         </div>
-        <a>Impressum</a>
+        <div class="imprint-container">
+            <a (mouseenter)="mouseOverTrue()" (mouseleave)="mouseOverFalse()">Impressum</a>
+            <div [ngClass]="{'hidden': !mouseOver}" class="blue-line"></div>
+        </div>
     </div>
 </footer>
