@@ -2,15 +2,15 @@
     <span>Sven</span>
     <div class="header-btn-container">
         <div (click)="toggleClass(1)" class="line-btn-container">
-            <a [ngClass]="{'activated-color': isClicked}" href="#">About me</a>
+            <a [ngClass]="{'activated-color': isClicked}" href="#about_me">About me</a>
             <div [ngClass]="{'activated-visibility': isClicked}" id="line1" class="purple-line"></div>
         </div>
         <div (click)="toggleClass(2)" class="line-btn-container">
-            <a [ngClass]="{'activated-color': isClicked2}" href="#">Skills</a>
+            <a [ngClass]="{'activated-color': isClicked2}" href="#my_skills">Skills</a>
             <div [ngClass]="{'activated-visibility': isClicked2}" id="line2" class="purple-line"></div>
         </div>
         <div (click)="toggleClass(3)" class="line-btn-container">
-            <a [ngClass]="{'activated-color': isClicked3}" href="#">Portfolio</a>
+            <a [ngClass]="{'activated-color': isClicked3}" href="#portfolio">Portfolio</a>
             <div [ngClass]="{'activated-visibility': isClicked3}" id="line3" class="purple-line"></div>
         </div>
     </div>

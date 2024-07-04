@@ -22,6 +22,7 @@ section {
     align-items: center;
     gap: 44px;
     color: white;
+    z-index: 1;
 
     >.x {
         display: flex;
@@ -81,17 +82,15 @@ section {
     }
 }
 
-button {
+.button {
     background-color: #70E61C;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
     border: none;
     color: white;
-    height: 58px;
-    width: 165px;
     font-size: 23px;
     transition: scale 0.1s;
-    z-index: 1;
+    text-decoration: none;
 
     &:hover {
         background-color: #9747FF;

@@ -3,22 +3,9 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    >img{
-        height: 39px;
-        width: 39px;
-        margin-bottom: 90px;
-        margin-right: 100px;
-        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(130%) contrast(105%);
-        -webkit-transition : -webkit-filter 100ms linear;
-
-        &:hover{
-            cursor: pointer;
-            filter: none;
-        }
-    }
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     gap: 150px;
     padding-bottom: 180px;
@@ -44,7 +31,7 @@ p {
     margin: 0;
 }
 
-.contact-left-container{
+.contact-left-container {
     padding-left: 50px;
 }
 
@@ -63,6 +50,20 @@ p {
     font-size: 16px;
 }
 
-app-contactform{
+app-contactform {
     margin-top: 230px;
+}
+
+a {
+    height: 39px;
+    width: 39px;
+    margin-bottom: 90px;
+    margin-right: 100px;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(130%) contrast(105%);
+    -webkit-transition: -webkit-filter 100ms linear;
+
+    &:hover {
+        cursor: pointer;
+        filter: none;
+    }
 }
