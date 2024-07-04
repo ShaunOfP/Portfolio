@@ -103,6 +103,7 @@ section {
     height: 30px;
     width: 30px;
     z-index: 1;
+    transition: scale 0.2s;
 
     &:hover {
         scale: 1.3;
