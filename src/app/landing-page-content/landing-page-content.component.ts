@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { AboutMeComponent } from '../about-me/about-me.component';
-import { MainComponent } from '../main/main.component';
-import { MySkillsComponent } from '../my-skills/my-skills.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { MainComponent } from './components/main/main.component';
+import { MySkillsComponent } from './components/my-skills/my-skills.component';
 import { ProjectsPortfolioComponent } from '../projects-portfolio/projects-portfolio.component';
 import { ContactComponent } from '../contact/contact.component';
 import { FooterComponent } from '../footer/footer.component';
-import { HeaderComponent } from '../header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-landing-page-content',

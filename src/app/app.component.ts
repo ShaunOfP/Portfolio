@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { MainComponent } from './main/main.component';
-import { MySkillsComponent } from './my-skills/my-skills.component';
+import { HeaderComponent } from './landing-page-content/components/header/header.component';
+import { AboutMeComponent } from './landing-page-content/components/about-me/about-me.component';
+import { MainComponent } from './landing-page-content/components/main/main.component';
+import { MySkillsComponent } from './landing-page-content/components/my-skills/my-skills.component';
 import { ProjectsPortfolioComponent } from './projects-portfolio/projects-portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
