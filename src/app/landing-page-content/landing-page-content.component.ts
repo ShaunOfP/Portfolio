@@ -4,10 +4,10 @@ import { RouterOutlet } from '@angular/router';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { MainComponent } from './components/main/main.component';
 import { MySkillsComponent } from './components/my-skills/my-skills.component';
-import { ProjectsPortfolioComponent } from '../projects-portfolio/projects-portfolio.component';
-import { ContactComponent } from '../contact/contact.component';
-import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from '../shared/components/footer/footer.component';
+import { ProjectsPortfolioComponent } from './components/projects-portfolio/projects-portfolio.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
   selector: 'app-landing-page-content',

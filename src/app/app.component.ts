@@ -5,9 +5,9 @@ import { HeaderComponent } from './landing-page-content/components/header/header
 import { AboutMeComponent } from './landing-page-content/components/about-me/about-me.component';
 import { MainComponent } from './landing-page-content/components/main/main.component';
 import { MySkillsComponent } from './landing-page-content/components/my-skills/my-skills.component';
-import { ProjectsPortfolioComponent } from './projects-portfolio/projects-portfolio.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { ProjectsPortfolioComponent } from './landing-page-content/components/projects-portfolio/projects-portfolio.component';
+import { ContactComponent } from './landing-page-content/components/contact/contact.component';
 
 @Component({
   selector: 'app-root',
