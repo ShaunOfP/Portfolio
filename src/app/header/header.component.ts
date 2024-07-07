@@ -32,4 +32,22 @@ export class HeaderComponent {
         break;
     }
   }
+
+  ngOnInit() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const targetId = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
+        if (targetId) {
+          const targetElement = document.querySelector(targetId) as HTMLElement;
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  }
 }

@@ -27,6 +27,7 @@ section {
         font-weight: 400;
         color: white;
         transition: color 0.2s;
+        scroll-behavior: smooth;
 
         &:hover {
             color: #70E61C;
