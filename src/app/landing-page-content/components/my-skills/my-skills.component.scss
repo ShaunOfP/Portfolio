@@ -14,10 +14,18 @@ section {
     }
 }
 
+.background-shadow-my-skills{
+    position: absolute;
+    transform: rotateX(180deg);
+    left: -500px;
+    top: 2300px;
+}
+
 .icon-row {
     display: flex;
     width: 844px;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .icon-box {

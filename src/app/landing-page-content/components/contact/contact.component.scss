@@ -5,6 +5,13 @@ section {
     align-items: flex-end;
 }
 
+.background-shadow-contact{
+    position: absolute;
+    left: -350px;
+    top: 6150px;
+    transform: rotateZ(-100deg);
+}
+
 .contact-container {
     display: flex;
     gap: 150px;

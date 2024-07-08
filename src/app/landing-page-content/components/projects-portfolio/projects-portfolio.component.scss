@@ -4,6 +4,19 @@ section {
     padding-bottom: 140px;
 }
 
+.background-shadow-portfolio-middle{
+    position: absolute;
+    left: -50px;
+    top: 4000px;
+}
+
+.background-shadow-portfolio-end{
+    position: absolute;
+    right: -450px;
+    top: 5000px;
+    transform: rotateZ(75deg);
+}
+
 p {
     margin: 0;
     color: white;
@@ -56,6 +69,8 @@ h1 {
     gap: 150px;
     padding-left: 100px;
     padding-right: 100px;
+    z-index: 1;
+    position: relative;
 
     >app-project-blueprint{
         margin-left: 72px;

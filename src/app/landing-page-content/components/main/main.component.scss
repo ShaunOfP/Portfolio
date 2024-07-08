@@ -9,10 +9,16 @@ section {
     }
 }
 
+.background-shadow {
+    position: absolute;
+    left: 12px;
+}
+
 .main-picture {
     height: 705px;
     width: 646px;
     margin-left: 47px;
+    // zindex wenn bild kommt
 }
 
 .headline {
