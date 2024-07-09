@@ -9,11 +9,13 @@
         <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
     </div>
     <div class="project-container">
+        @for(project of projects; track project.name; let index = $index){
+        @if(index % 2 == 0){
         <app-project-blueprint></app-project-blueprint>
+        } @else {
         <app-project-blueprint-mirrored></app-project-blueprint-mirrored>
-        <app-project-blueprint></app-project-blueprint>
-        <app-project-blueprint-mirrored></app-project-blueprint-mirrored>
-        <app-project-blueprint></app-project-blueprint>
+        }
+        }
     </div>
     <img class="background-shadow-portfolio-end" src="./assets/img/background/green_1.svg">
 </section>
