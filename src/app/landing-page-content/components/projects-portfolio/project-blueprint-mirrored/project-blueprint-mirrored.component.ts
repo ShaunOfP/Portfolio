@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Item } from '../../../../../models/item.model';
 
 @Component({
   selector: 'app-project-blueprint-mirrored',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './project-blueprint-mirrored.component.scss'
 })
 export class ProjectBlueprintMirroredComponent {
-
+  @Input() projectDataMirrored: Item[] = [];
 }
