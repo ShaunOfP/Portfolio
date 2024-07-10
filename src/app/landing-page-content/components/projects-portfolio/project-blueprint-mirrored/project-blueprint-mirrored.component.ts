@@ -9,5 +9,12 @@ import { Item } from '../../../../../models/item.model';
   styleUrl: './project-blueprint-mirrored.component.scss'
 })
 export class ProjectBlueprintMirroredComponent {
-  @Input() projectDataMirrored: Item[] = [];
+  @Input() projectDataMirrored: Item = {
+    'name': '',
+    'languages': '',
+    'description': '',
+    'imgPath': '',
+    'livetestPath': '',
+    'githubPath': ''
+  };
 }

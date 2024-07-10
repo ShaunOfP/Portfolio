@@ -9,8 +9,12 @@ import { Item } from '../../../../../models/item.model';
   styleUrl: './project-blueprint.component.scss'
 })
 export class ProjectBlueprintComponent {
-  @Input() projectData: Item[] = [];
-  @Input() name: string = '';
-  @Input() languages: string = '';
-  @Input() description: string = '';
+  @Input() projectData: Item = {
+    'name': '',
+    'languages': '',
+    'description': '',
+    'imgPath': '',
+    'livetestPath': '',
+    'githubPath': ''
+  };
 }
