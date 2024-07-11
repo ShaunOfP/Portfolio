@@ -18,7 +18,7 @@ export class ProjectsPortfolioComponent {
       'description': 'Task manager inspired by the Kanban System. Create and organzie tasks using drag and drop function, assign users and categories.',
       'imgPath': '',
       'livetestPath': '',
-      'githubPath': ''
+      'githubPath': 'https://github.com/ShaunOfP/Join'
     },
     {
       'name': 'El Pollo Loco',
@@ -26,7 +26,7 @@ export class ProjectsPortfolioComponent {
       'description': 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       'imgPath': '',
       'livetestPath': '',
-      'githubPath': ''
+      'githubPath': 'https://github.com/ShaunOfP/El-Pollo-Loco'
     },
     {
       'name': 'x',

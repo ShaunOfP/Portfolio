@@ -18,4 +18,8 @@ export class FooterComponent {
   mouseOverFalse(){
     this.mouseOver = false;
   }
+
+  navigateToGithub(){
+    window.open("https://github.com/ShaunOfP", "_blank");
+  }
 }
