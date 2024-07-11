@@ -1,7 +1,6 @@
 section {
     height: 100vh;
     width: 100%;
-    background-color: #141D2F;
     padding-top: 110px;
 
     >div {
@@ -79,7 +78,7 @@ section {
 .scroll-down {
     transform: rotate(90deg);
     position: absolute;
-    right: 35px; //vorgegeben 96px, passt aber nicht wirklich
+    right: 35px;
     font-size: 23px;
     color: white;
 
@@ -124,18 +123,74 @@ section {
     z-index: 0;
 }
 
-.size-90 {
+.headline-right-name {
     font-size: 90px;
-}
-
-.bold {
     font-weight: 700px;
 }
 
-.size-58 {
+.headline-right-profession {
+    color: #9747FF;
     font-size: 58px;
 }
 
-.color-purple {
-    color: #9747FF;
+@media (max-width: 1024px) {
+    .background-shadow {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+
+        >div {
+            flex-direction: column;
+        }
+    }
+
+    .background-shadow {
+        width: 100%;
+    }
+
+    .main-picture {
+        width: 100%;
+        margin-left: 0;
+        height: 445px;
+    }
+
+    .background-form {
+        display: none;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+    .headline {
+        gap: 26px;
+    }
+
+    .headline-left {
+        text-align: center;
+
+        >span {
+            font-size: 32px;
+        }
+    }
+
+    .headline-right-name {
+        font-size: 45px;
+    }
+
+    .headline-right-profession {
+        font-size: 29px;
+    }
+
+    .main-bottom {
+        display: flex;
+        flex-direction: row !important;
+    }
 }

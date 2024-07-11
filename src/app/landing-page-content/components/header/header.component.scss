@@ -53,3 +53,9 @@ section {
 .activated-visibility{
     visibility: visible;
 }
+
+@media (max-width: 600px){
+    section{
+        height: 100px;
+    }
+}
