@@ -47,3 +47,25 @@ section {
     height: 4px;
     border: none;
 }
+
+p{
+    margin: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 600px){
+    section{
+        >div{
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+    .headline{
+        font-size: 45px;
+    }
+
+    .image-circle{
+        display: none;
+    }
+}
