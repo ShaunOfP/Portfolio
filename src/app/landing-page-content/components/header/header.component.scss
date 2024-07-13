@@ -132,7 +132,7 @@ nav {
 }
 
 .burger-menu-container{
-    margin-right: 25px;
+    display: none;
 }
 
 @media (max-width: 600px) {
@@ -149,5 +149,8 @@ nav {
         display: none;
     }
 
-
+    .burger-menu-container{
+        margin-right: 25px;
+        display: flex;
+    }
 }
