@@ -113,10 +113,11 @@ section {
         flex-direction: column;
         gap: 30px;
 
-        >p {
+        >a {
             font-size: 23px;
             color: white;
             margin: 0;
+            text-decoration: none;
 
             &:hover {
                 cursor: pointer;
