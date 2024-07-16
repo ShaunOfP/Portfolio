@@ -72,3 +72,31 @@ button {
     background-color: transparent;
     border: 1px solid #70E61C;
 }
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column-reverse;
+
+        >div {
+            align-items: normal;
+        }
+
+        >img {
+            width: 100%;
+            height: 215px;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .project-description {
+        align-items: center;
+    }
+
+    .project-btns-container {
+        gap: 0;
+        justify-content: space-around;
+    }
+}

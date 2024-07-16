@@ -3,13 +3,13 @@ section {
     padding-bottom: 140px;
 }
 
-.background-shadow-portfolio-middle{
+.background-shadow-portfolio-middle {
     position: absolute;
     left: -50px;
     top: 4000px;
 }
 
-.background-shadow-portfolio-end{
+.background-shadow-portfolio-end {
     position: absolute;
     right: -450px;
     top: 5000px;
@@ -71,13 +71,61 @@ h1 {
     z-index: 1;
     position: relative;
 
-    >app-project-blueprint{
+    >app-project-blueprint {
         margin-left: 72px;
     }
 
-    >app-project-blueprint-mirrored{
+    >app-project-blueprint-mirrored {
         margin-right: 72px;
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .portfolio-headline {
+        justify-content: center;
+    }
+
+    .purple-line-long {
+        margin-right: -25px;
+    }
+
+    .purple-line-short {
+        width: 20px;
+        margin-left: 25px;
+    }
+
+    h1 {
+        margin-left: 9px;
+        margin-right: 10px;
+        font-size: 45px;
+    }
+
+    .purple-line-long {
+        width: 75px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .project-container{
+        padding: 0;
+
+        >app-project-blueprint {
+            margin-left: 0;
+        }
+    
+        >app-project-blueprint-mirrored {
+            margin-right: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 }
