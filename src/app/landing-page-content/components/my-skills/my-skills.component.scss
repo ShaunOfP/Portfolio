@@ -4,6 +4,7 @@ section {
     justify-content: space-between;
     padding-bottom: 175px;
     padding-top: 278px;
+    position: relative;
 }
 
 .icon-container {
@@ -15,8 +16,8 @@ section {
 .background-shadow-my-skills {
     position: absolute;
     transform: rotateX(180deg);
-    left: -500px;
-    top: 2300px;
+    top: 350px;
+    left: -550px;
 }
 
 .icon-row {

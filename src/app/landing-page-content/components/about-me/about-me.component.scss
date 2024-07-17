@@ -2,21 +2,21 @@ section {
     color: white;
     padding-top: 160px;
     padding-bottom: 278px;
+    position: relative;
 
     >div {
         padding-left: 100px;
         display: flex;
         justify-content: space-between;
-        margin-top: -750px;
         z-index: 1;
         position: relative;
     }
 }
 
 .background-shadow-about-me{
-    position: relative;
-    right: -1300px;
-    top: -415px;
+    position: absolute;
+    right: -450px;
+    top: -250px;
 }
 
 .headline {

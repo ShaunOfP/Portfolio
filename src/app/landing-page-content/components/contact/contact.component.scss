@@ -2,12 +2,13 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
 }
 
 .background-shadow-contact {
     position: absolute;
+    bottom: -350px;
     left: -350px;
-    top: 6150px;
     transform: rotateZ(-100deg);
 }
 
@@ -113,5 +114,9 @@ a {
 
     app-contactform{
         margin-top: 0px;
+    }
+
+    .background-shadow-contact{
+        bottom: -650px;
     }
 }

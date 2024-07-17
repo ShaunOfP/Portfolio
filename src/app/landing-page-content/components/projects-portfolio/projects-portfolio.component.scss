@@ -1,18 +1,19 @@
 section {
     padding-top: 100px;
     padding-bottom: 140px;
+    position: relative;
 }
 
 .background-shadow-portfolio-middle {
     position: absolute;
-    left: -50px;
-    top: 4000px;
+    left: 0px;
+    top: 1100px;
 }
 
 .background-shadow-portfolio-end {
     position: absolute;
-    right: -450px;
-    top: 5000px;
+    right: -500px;
+    bottom: 0px;
     transform: rotateZ(75deg);
 }
 
@@ -130,9 +131,11 @@ h1 {
     }
 
     .background-shadow-portfolio-middle{
-        position: relative;
+        top: 1600px;
         width: 500px;
-        top: 2005px;
-        left: 230px;
+    }
+
+    .background-shadow-portfolio-end{
+        bottom: -250px;
     }
 }
