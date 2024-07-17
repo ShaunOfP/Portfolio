@@ -1,9 +1,9 @@
 <div class="form-container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <input class="form-input" #name="ngModel" [(ngModel)]="contactData.name" required placeholder="Your name">
-        <input class="form-input" #email="ngModel" [(ngModel)]="contactData.email" required placeholder="Your email"
+        <input class="form-input" #name="ngModel" [ngModelOptions]="{standalone: true}" [(ngModel)]="contactData.name" required placeholder="Your name">
+        <input class="form-input" #email="ngModel" [ngModelOptions]="{standalone: true}" [(ngModel)]="contactData.email" required placeholder="Your email"
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-        <textarea #message="ngModel" [(ngModel)]="contactData.message" required placeholder="Your message"
+        <textarea #message="ngModel" [ngModelOptions]="{standalone: true}" [(ngModel)]="contactData.message" required placeholder="Your message"
             minlength="4"></textarea>
     </form>
     <div>
