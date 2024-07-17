@@ -86,7 +86,11 @@ h1 {
 @media (max-width: 600px) {
     section {
         margin-left: 25px;
-        margin-right: 25px;
+        overflow-x: clip;
+
+        >div {
+            margin-right: 25px;
+        }
     }
 
     .portfolio-headline {
@@ -116,13 +120,13 @@ h1 {
         text-align: center;
     }
 
-    .project-container{
+    .project-container {
         padding: 0;
 
         >app-project-blueprint {
             margin-left: 0;
         }
-    
+
         >app-project-blueprint-mirrored {
             margin-right: 0;
             display: flex;
@@ -130,12 +134,14 @@ h1 {
         }
     }
 
-    .background-shadow-portfolio-middle{
+    .background-shadow-portfolio-middle {
         top: 1600px;
         width: 500px;
     }
 
-    .background-shadow-portfolio-end{
-        bottom: -250px;
+    .background-shadow-portfolio-end {
+        bottom: -220px;
+        right: -275px;
+        height: 600px;
     }
 }

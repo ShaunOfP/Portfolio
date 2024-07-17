@@ -57,6 +57,7 @@ p{
 @media (max-width: 600px){
     section{
         padding-top: 100px;
+        overflow-x: clip;
 
         >div{
             padding-left: 25px;

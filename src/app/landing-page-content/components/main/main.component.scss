@@ -152,6 +152,7 @@ section {
         display: flex;
         flex-direction: column;
         padding-top: 100px;
+        overflow-x: clip;
 
         >div {
             flex-direction: column;
