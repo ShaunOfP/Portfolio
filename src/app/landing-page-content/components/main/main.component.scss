@@ -28,6 +28,7 @@ section {
     gap: 44px;
     color: white;
     z-index: 1;
+    margin-right: 100px;
 
     >div {
         display: flex;
@@ -81,6 +82,7 @@ section {
     right: 35px;
     font-size: 23px;
     color: white;
+    z-index: 1;
 
     >img {
         transform: rotate(-90deg);
@@ -118,19 +120,23 @@ section {
 
 .background-form {
     width: 100%;
-    position: absolute;
-    top: 240px;
+    position: relative;
+    top: -650px;
     z-index: 0;
 }
 
 .headline-right-name {
     font-size: 90px;
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 .headline-right-profession {
     color: #9747FF;
     font-size: 58px;
+}
+
+.mobile-background-form {
+    display: none;
 }
 
 @media (max-width: 1024px) {
@@ -151,6 +157,11 @@ section {
         }
     }
 
+    .background-form {
+        top: 90px;
+        width: auto;
+    }
+
     .background-shadow {
         max-width: 100%;
     }
@@ -159,10 +170,6 @@ section {
         width: 100%;
         margin-left: 0;
         height: 445px;
-    }
-
-    .background-form {
-        display: none;
     }
 
     .scroll-down {

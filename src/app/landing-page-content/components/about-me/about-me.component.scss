@@ -5,17 +5,18 @@ section {
 
     >div {
         padding-left: 100px;
-        position: relative;
-        z-index: 1;
         display: flex;
         justify-content: space-between;
+        margin-top: -750px;
+        z-index: 1;
+        position: relative;
     }
 }
 
 .background-shadow-about-me{
-    position: absolute;
-    right: -400px;
-    top: 825px;
+    position: relative;
+    right: -1300px;
+    top: -415px;
 }
 
 .headline {
