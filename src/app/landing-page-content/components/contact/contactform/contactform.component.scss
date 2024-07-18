@@ -60,8 +60,8 @@ textarea {
 
 input[type="checkbox"] {
     position: relative;
-    height: 18px;
-    width: 18px;
+    min-height: 18px;
+    min-width: 18px;
     background-color: #141D2F;
     border: 2px solid #70E61C;
     border-radius: 5px;
@@ -93,7 +93,7 @@ input[type="checkbox"]:checked:before {
     }
 }
 
-label{
+label {
     color: white;
     font-size: 14px;
 }
@@ -101,6 +101,8 @@ label{
 .purple-text {
     color: #9747FF;
     text-decoration: none;
+    z-index: 1;
+    position: relative;
 
     &:hover {
         cursor: pointer;
@@ -121,6 +123,7 @@ button {
     color: white;
     font-size: 23px;
     border: none;
+    z-index: 1;
 
     &:enabled {
         background-color: #70E61C;
@@ -138,19 +141,29 @@ button {
     }
 }
 
-@media (max-width: 600px){
-    .form-container{
+@media (max-width: 600px) {
+    .form-container {
         height: auto;
         width: auto;
         padding-right: 0px;
         margin-left: 25px;
     }
 
-    label{
+    label {
         padding-left: 5px;
     }
 
-    textarea{
+    textarea {
         height: 162px;
+    }
+
+    button {
+
+        &:enabled {
+            &:hover {
+                scale: 1.1;
+            }
+        }
+
     }
 }

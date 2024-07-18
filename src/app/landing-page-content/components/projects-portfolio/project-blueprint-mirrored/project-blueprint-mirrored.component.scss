@@ -72,6 +72,8 @@ a {
 .github-btn {
     background-color: transparent;
     border: 1px solid #70E61C;
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -81,6 +83,7 @@ a {
 
         >div {
             align-items: normal;
+            width: auto;
         }
 
         >img {
@@ -95,10 +98,17 @@ a {
 
     .project-description {
         align-items: center;
+        text-align: center;
     }
 
     .project-btns-container {
         gap: 0;
         justify-content: space-around;
+    }
+}
+
+@media (max-width: 370px) {
+    a {
+        padding: 15px 15px 15px 15px;
     }
 }

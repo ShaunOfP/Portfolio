@@ -58,6 +58,10 @@ section {
     height: 50px;
     width: 50px;
     position: relative;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .burger-menu span {

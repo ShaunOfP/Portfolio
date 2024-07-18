@@ -159,6 +159,10 @@ section {
         }
     }
 
+    #mail{
+        display: none;
+    }
+
     .background-form {
         top: 90px;
         width: auto;
@@ -184,6 +188,7 @@ section {
 
     .headline-left {
         text-align: center;
+        margin-right: -55px;
 
         >span {
             font-size: 32px;
@@ -201,5 +206,31 @@ section {
     .main-bottom {
         display: flex;
         flex-direction: row !important;
+    }
+}
+
+@media (max-width: 525px) {
+    .headline {
+        margin: 0;
+    }
+
+    .headline-left {
+        margin-left: -55px;
+    }
+}
+
+@media (max-width: 430px) {
+    .headline-right-profession{
+        font-size: 24px;
+    }
+
+    .headline-right-name{
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 340px){
+    .purple-line{
+        width: 80px;
     }
 }

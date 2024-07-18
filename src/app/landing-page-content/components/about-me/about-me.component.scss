@@ -58,6 +58,7 @@ p{
     section{
         padding-top: 100px;
         overflow-x: clip;
+        padding-bottom: 154px;
 
         >div{
             padding-left: 25px;
@@ -71,5 +72,16 @@ p{
 
     .image-circle{
         display: none;
+    }
+
+    .background-shadow-about-me{
+        height: 615px;
+        right: -250px;
+    }
+}
+
+@media (max-width: 400px){
+    .background-shadow-about-me{
+        height: 415px;
     }
 }

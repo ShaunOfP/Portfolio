@@ -3,6 +3,8 @@ section {
     flex-direction: column;
     align-items: flex-end;
     position: relative;
+    overflow: hidden;
+    padding-top: 100px;
 }
 
 .background-shadow-contact {
@@ -68,6 +70,7 @@ a {
     margin-right: 100px;
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(130%) contrast(105%);
     -webkit-transition: -webkit-filter 100ms linear;
+    z-index: 1;
 
     &:hover {
         cursor: pointer;
@@ -76,8 +79,7 @@ a {
 }
 
 @media (max-width: 600px) {
-    section{
-        margin-right: 25px;
+    section {
         overflow: hidden;
     }
 
@@ -86,6 +88,10 @@ a {
         gap: 45px;
         padding-bottom: 30px;
         padding-top: 0;
+
+        >div {
+            margin-right: 25px;
+        }
     }
 
     .purple-line {
@@ -108,16 +114,18 @@ a {
         font-size: 23px;
     }
 
-    a{
-        margin-right: 0px;
+    a {
+        margin-right: 25px;
         margin-bottom: 50px;
     }
 
-    app-contactform{
+    app-contactform {
         margin-top: 0px;
+        margin-right: 25px;
+        overflow-x: visible;
     }
 
-    .background-shadow-contact{
+    .background-shadow-contact {
         bottom: -650px;
     }
 }

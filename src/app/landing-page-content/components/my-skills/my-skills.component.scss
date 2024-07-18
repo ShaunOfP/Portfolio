@@ -18,6 +18,7 @@ section {
     transform: rotateX(180deg);
     top: 350px;
     left: -550px;
+    z-index: 0;
 }
 
 .icon-row {
@@ -104,6 +105,7 @@ section {
     font-size: 23px;
     transition: scale 0.1s;
     text-decoration: none;
+    z-index: 1;
 
     &:hover {
         background-color: #9747FF;
@@ -164,6 +166,7 @@ section {
     text-decoration: none;
     display: none;
     margin-top: 67px;
+    z-index: 1;
 
     &:hover {
         background-color: #9747FF;
@@ -205,6 +208,7 @@ section {
     .icon-row {
         width: auto;
         gap: 56px;
+        justify-content: center;
     }
 
     .icon-box {

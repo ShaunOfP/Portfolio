@@ -69,23 +69,36 @@ a {
 .github-btn {
     background-color: transparent;
     border: 1px solid #70E61C;
+    display: flex;
+    align-items: center;
 }
 
-@media (max-width: 600px){
-    section{
+@media (max-width: 600px) {
+    section {
         flex-direction: column;
-        >img{
+
+        >div {
+            width: auto;
+        }
+
+        >img {
             width: 100%;
             height: 215px;
         }
     }
 
-    .project-description{
+    .project-description {
         text-align: center;
     }
 
-    .project-btns-container{
+    .project-btns-container {
         gap: 0;
         justify-content: space-around;
+    }
+}
+
+@media (max-width: 370px) {
+    a {
+        padding: 15px 15px 15px 15px;
     }
 }
