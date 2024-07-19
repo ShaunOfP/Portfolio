@@ -39,7 +39,7 @@ p {
 }
 
 .purple-line-long {
-    width: 37%;
+    width: 33%;
     height: 4px;
     background-color: #9747FF;
     border: none;
@@ -94,7 +94,7 @@ h1 {
     }
 
     .portfolio-headline {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .purple-line-long {
@@ -107,8 +107,7 @@ h1 {
     }
 
     h1 {
-        margin-left: 9px;
-        margin-right: 10px;
+        margin: 0;
         font-size: 45px;
     }
 
