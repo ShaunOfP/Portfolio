@@ -4,7 +4,6 @@ section {
     align-items: flex-end;
     position: relative;
     overflow: hidden;
-    padding-top: 100px;
 }
 
 .background-shadow-contact {
@@ -17,7 +16,7 @@ section {
 .contact-container {
     display: flex;
     gap: 150px;
-    padding-bottom: 180px;
+    padding-bottom: 51px;
     padding-top: 100px;
     color: white;
 
@@ -27,7 +26,7 @@ section {
 }
 
 .purple-line {
-    margin-top: 60px;
+    margin-top: 64px;
     background-color: #9747FF;
     width: 50px;
     height: 4px;
@@ -78,9 +77,40 @@ a {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1370px) {
+    .contact-container {
+        gap: 0;
+    }
+}
+
+@media (max-width: 1245px) {
+    .contact-left-container {
+        padding-left: 0;
+    }
+
+    a {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    .contact-headline {
+        font-size: 64px;
+    }
+
+    .purple-line {
+        margin-top: 45px;
+    }
+
+    .contact-question {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 880px) {
     section {
         overflow: hidden;
+        padding-top: 100px;
     }
 
     .contact-container {
@@ -90,12 +120,13 @@ a {
         padding-top: 0;
 
         >div {
-            margin-right: 25px;
+            margin-right: 50px;
         }
     }
 
     .purple-line {
         margin-top: 31px;
+        min-width: 45px;
     }
 
     .contact-left-container {
@@ -114,18 +145,30 @@ a {
         font-size: 23px;
     }
 
+    app-contactform {
+        margin-top: 0px;
+        overflow-x: visible;
+        margin-right: 50px;
+    }
+
+    .background-shadow-contact {
+        bottom: -650px;
+    }
+}
+
+@media (max-width: 600px) {
     a {
         margin-right: 25px;
         margin-bottom: 50px;
     }
 
-    app-contactform {
-        margin-top: 0px;
-        margin-right: 25px;
-        overflow-x: visible;
+    .contact-container {
+        >div {
+            margin-right: 25px;
+        }
     }
 
-    .background-shadow-contact {
-        bottom: -650px;
+    app-contactform {
+        margin-right: 25px;
     }
 }

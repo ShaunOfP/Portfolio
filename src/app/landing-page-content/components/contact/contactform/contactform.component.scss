@@ -1,7 +1,6 @@
 .form-container {
     width: 617px;
-    height: 504px;
-    padding-right: 100px;
+    margin-right: 100px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -141,16 +140,28 @@ button {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1400px) {
+    .form-container {
+        width: 45.5vw;
+    }
+}
+
+@media (max-width: 880px){
     .form-container {
         height: auto;
         width: auto;
-        padding-right: 0px;
-        margin-left: 25px;
+        margin-left: 50px;
+        margin-right: 0px;
     }
 
     label {
         padding-left: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        margin-left: 25px;
     }
 
     textarea {
