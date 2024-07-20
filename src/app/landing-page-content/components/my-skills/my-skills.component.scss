@@ -1,5 +1,5 @@
 section {
-    padding-left: 100px;
+    margin-left: 100px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 175px;
@@ -175,10 +175,96 @@ section {
     }
 }
 
+@media (max-width: 1420px) {
+    .icon-row {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1255px) {
+    .my-skills-right-side {
+        width: 500px;
+    }
+
+    .my-skills-headline {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 1245px) {
+    section {
+        margin-left: 50px;
+    }
+
+    .purple-line {
+        margin-top: 5vw;
+    }
+}
+
+@media (max-width: 1140px) {
+    .icon-box {
+        padding: 0;
+    }
+
+    .icon-row {
+        gap: 50px;
+    }
+
+    .icon-container {
+        width: 517px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .my-skills-right-side {
+        width: 400px;
+    }
+}
+
+@media (max-width: 850px) {
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-skills-right-side {
+        display: none;
+    }
+
+    .my-skills-headline {
+        font-size: 45px;
+    }
+
+    .mobile-skills-header {
+        display: flex;
+    }
+
+    .mobile-button {
+        display: flex;
+        width: max-content;
+    }
+
+    .icon-container {
+        width: auto;
+        margin-right: 50px;
+    }
+
+    .icon-row {
+        gap: 56px;
+    }
+
+    .icon-box {
+        padding: 0;
+    }
+}
+
+
+
 @media (max-width: 600px) {
     section {
         flex-direction: column;
-        padding-left: 25px;
+        margin-left: 25px;
         padding-right: 25px;
         align-items: center;
         padding-top: 154px;
@@ -188,11 +274,11 @@ section {
         display: none;
     }
 
-    .my-skills-headline{
+    .my-skills-headline {
         font-size: 45px;
     }
 
-    .mobile-skills-header{
+    .mobile-skills-header {
         display: flex;
     }
 
@@ -206,16 +292,14 @@ section {
     }
 
     .icon-row {
-        width: auto;
         gap: 56px;
-        justify-content: center;
     }
 
     .icon-box {
         padding: 0;
     }
 
-    .purple-line{
+    .purple-line {
         margin-right: -25px;
     }
 }

@@ -84,15 +84,15 @@ footer {
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1245px) {
     footer {
-        height: 380px;
-        justify-content: center;
-        padding: 0 25px 0 25px;
+        padding: 0 50px 0 50px;
     }
+}
 
-    .footer-headline{
-        margin-bottom: 55px !important;
+@media (max-width: 650px){
+    footer {
+        justify-content: center;
     }
 
     .footer-info {
@@ -106,5 +106,16 @@ footer {
 
     .imprint-container {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        height: 380px;
+        padding: 0 25px 0 25px;
+    }
+
+    .footer-headline {
+        margin-bottom: 55px !important;
     }
 }
