@@ -149,7 +149,7 @@ section {
     font-size: 58px;
 }
 
-.mobile-background-form {
+.second-background-form {
     display: none;
 }
 
@@ -228,21 +228,72 @@ section {
         right: -38px;
     }
 
-    .picture-container{
+    .picture-container {
         margin-left: 25px;
     }
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1050px) {
     .picture-container {
         height: 556px;
         width: 456px;
     }
 }
 
-@media (max-width: 900px){
-    .background-form{
-        
+@media (max-width: 900px) {
+    section {
+        >div {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .headline {
+        margin-right: 0;
+        margin-top: -100px;
+        gap: 22px;
+    }
+
+    .picture-container {
+        margin: 0;
+    }
+
+    .background-form {
+        display: none;
+    }
+
+    .second-background-form {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 444px;
+        z-index: 2;
+    }
+
+    .main-bottom {
+        flex-direction: row !important;
+    }
+
+    .headline-left {
+        height: max-content;
+
+        >span {
+            font-size: 50px;
+        }
+    }
+
+    .headline-right-name {
+        font-size: 64px;
+    }
+
+    .headline-right-profession {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .scroll-down {
+        display: none;
     }
 }
 
@@ -273,12 +324,9 @@ section {
         margin-left: 0;
     }
 
-    .scroll-down {
-        display: none;
-    }
-
     .headline {
         gap: 26px;
+        margin-top: 0;
     }
 
     .headline-left {
@@ -319,18 +367,18 @@ section {
     }
 }
 
-@media (min-width: 320px) and (max-width: 380px){
-    .headline-left{
-        >span{
+@media (min-width: 320px) and (max-width: 380px) {
+    .headline-left {
+        >span {
             font-size: 24px;
         }
     }
 
-    .headline-right-name{
+    .headline-right-name {
         font-size: 32px;
     }
 
-    .headline-right-profession{
+    .headline-right-profession {
         font-size: 20px;
     }
 }
