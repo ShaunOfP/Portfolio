@@ -84,11 +84,6 @@ h1 {
     z-index: 1;
     position: relative;
 
-    >app-project-blueprint {
-        display: flex;
-        justify-content: flex-end;
-    }
-
     >app-project-blueprint-mirrored {
         display: flex;
         justify-content: flex-start;
