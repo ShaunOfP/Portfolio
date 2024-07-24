@@ -1,0 +1,16 @@
+section {
+    color: white;
+    margin-left: 100px;
+}
+
+@media (max-width: 1245px) {
+    section {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        margin-left: 25px;
+    }
+}
