@@ -9,6 +9,13 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
+
+        >div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
     }
 }
 
@@ -20,8 +27,8 @@ p {
     height: 20px;
     border-radius: 10px;
     border: 1px solid #9747FF;
-    padding: 15px 25px 15px 25px;
     background-color: #141D2F;
+    padding: 15px 25px 15px 25px;
     color: white;
     font-size: 16px;
 
@@ -29,6 +36,39 @@ p {
         border: 1px solid #70E61C;
         cursor: pointer;
     }
+
+    &:focus {
+        outline: 0px;
+        border: 1px solid #70E61C;
+    }
+}
+
+.is-valid {
+    background: url("/assets/img/check-green.svg") no-repeat scroll 25px 25px;
+    background-position: 96%;
+    outline: 0px;
+    border: 1px solid #70E61C;
+}
+
+.is-invalid {
+    background: url("/assets/img/check-red.svg") no-repeat scroll 25px 25px;
+    background-position: 96%;
+    outline: 0px;
+    border: 1px solid #E61C40;
+}
+
+.textbox-is-valid {
+    background-position: 96% 6% !important;
+    background: url("/assets/img/check-green.svg") no-repeat scroll 25px 25px;
+    outline: 0px;
+    border: 1px solid #70E61C;
+}
+
+.textbox-is-invalid {
+    background-position: 96% 6% !important;
+    background: url("/assets/img/check-red.svg") no-repeat scroll 25px 25px;
+    outline: 0px;
+    border: 1px solid #E61C40;
 }
 
 textarea {
@@ -45,6 +85,16 @@ textarea {
         border: 1px solid #70E61C;
         cursor: pointer;
     }
+
+    &:focus {
+        outline: 0px;
+        border: 1px solid #70E61C;
+    }
+}
+
+span {
+    color: #E61C40;
+    font-size: 14px;
 }
 
 ::placeholder {
@@ -146,7 +196,7 @@ button {
     }
 }
 
-@media (max-width: 880px){
+@media (max-width: 880px) {
     .form-container {
         height: auto;
         width: auto;
