@@ -92,15 +92,16 @@ p {
         height: 300px;
         width: 300px;
     }
+
+    .background-shadow-about-me{
+        top: -150px;
+        right: -900px;
+    }
 }
 
 @media (max-width: 800px) {
     .green-line {
         width: 60px;
-    }
-
-    .background-shadow-about-me {
-        width: 680px;
     }
 }
 

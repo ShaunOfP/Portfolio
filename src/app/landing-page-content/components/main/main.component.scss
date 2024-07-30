@@ -69,7 +69,7 @@ section {
     gap: 40px;
     align-items: center;
     position: absolute;
-    bottom: 150px;
+    bottom: 130px;
     left: 0;
 
     >a {
@@ -348,6 +348,7 @@ section {
     .main-bottom {
         display: flex;
         flex-direction: row !important;
+        bottom: 110px;
     }
 }
 
@@ -386,5 +387,23 @@ section {
 @media (max-width: 340px) {
     .purple-line {
         width: 80px;
+    }
+}
+
+@media (max-height: 1050px) {
+    .headline {
+        margin-top: 0;
+    }
+}
+
+@media (max-height: 790px) {
+    .headline {
+        margin-top: -30px;
+    }
+}
+
+@media (max-height: 740px) {
+    .headline {
+        margin-top: -40px;
     }
 }
