@@ -59,7 +59,7 @@ section {
     width: 50px;
     position: relative;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
@@ -116,6 +116,7 @@ section {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        padding-bottom: 100px;
 
         >a {
             font-size: 23px;
@@ -138,29 +139,29 @@ nav {
     display: flex;
 }
 
-.burger-menu-container{
+.burger-menu-container {
     display: none;
 }
 
-@media (max-width: 1245px){
-    .header-btn-container{
+@media (max-width: 1245px) {
+    .header-btn-container {
         margin-right: 50px;
     }
 
-    section{
-        >span{
+    section {
+        >span {
             margin-left: 50px;
         }
     }
 }
 
-@media (max-width: 1120px){
-    .header-btn-container{
+@media (max-width: 1120px) {
+    .header-btn-container {
         margin-right: 25px;
     }
 
-    section{
-        >span{
+    section {
+        >span {
             margin-left: 25px;
         }
     }
@@ -171,7 +172,7 @@ nav {
         height: 100px;
         padding-left: 25px;
 
-        >span{
+        >span {
             margin-left: 0;
         }
     }
@@ -180,7 +181,7 @@ nav {
         display: none;
     }
 
-    .burger-menu-container{
+    .burger-menu-container {
         margin-right: 25px;
         display: flex;
     }

@@ -390,7 +390,7 @@ section {
     }
 }
 
-@media (max-height: 1050px) {
+@media (min-height: 1000px) and (max-height: 1050px) {
     .headline {
         margin-top: 0;
     }
