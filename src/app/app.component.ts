@@ -16,6 +16,6 @@ import { ContactComponent } from './landing-page-content/components/contact/cont
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent{
   title = 'portfolio';
 }

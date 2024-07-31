@@ -47,12 +47,35 @@ export class ContactformComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log("success");
       ngForm.resetForm();
+      this.userFeedbackAnimation();
+      console.log("success");
     }
   }
 
   toggleCheckbox() {
     this.isChecked = !this.isChecked;
+  }
+
+  userFeedbackAnimation() {
+    const curtainContainer = document.getElementById('msgForeground');
+    const curtainLeft = document.getElementById('msgCurtainLeft');
+    const curtainRight = document.getElementById('msgCurtainRight');
+    const successMessage = document.getElementById('msgSuccess');
+
+
+    if (curtainContainer && curtainLeft && curtainRight && successMessage) {
+      curtainContainer.style.display = 'flex';
+      curtainLeft.style.display = 'flex';
+      curtainRight.style.display = 'flex';
+      successMessage.style.display = 'flex';
+
+      setTimeout(() => {
+        curtainContainer.style.display = 'none';
+        curtainLeft.style.display = 'none';
+        curtainRight.style.display = 'none';
+        successMessage.style.display = 'none';
+      }, 1500);
+    }
   }
 }
