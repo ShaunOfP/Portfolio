@@ -6,7 +6,7 @@
                     class="form-input" #name="ngModel" [ngModelOptions]="{standalone: true}"
                     [(ngModel)]="contactData.name" required placeholder="Your name">
                 @if(!name.valid && name.touched){
-                <span>Please enter a name</span>
+                <span class="error-message">Please enter a name</span>
                 }
             </div>
             <div>
@@ -15,7 +15,7 @@
                     [ngModelOptions]="{standalone: true}" [(ngModel)]="contactData.email" required
                     placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 @if(!email.valid && email.touched){
-                <span>Please enter a email</span>
+                <span class="error-message">Please enter a email</span>
                 }
             </div>
             <div>
@@ -24,7 +24,7 @@
                     #message="ngModel" [ngModelOptions]="{standalone: true}" [(ngModel)]="contactData.message" required
                     placeholder="Your message"></textarea>
                 @if(!message.valid && message.touched && !message.disabled){
-                <span>Please enter a message</span>
+                <span class="error-message-textarea">Please enter a message</span>
                 }
             </div>
         </div>
@@ -41,11 +41,7 @@
             </div>
             <div class="btn-container">
                 <button type="submit" disabled [disabled]="!isChecked">Send message :)</button>
-                <div id="msgForeground" class="success-message-foreground">
-                    <div id="msgCurtainRight" class="success-message-mask-right"></div>
-                    <span id="msgSuccess" class="mail-success">Mail sent :D</span>
-                    <div id="msgCurtainLeft" class="success-message-mask-left"></div>
-                </div>            
+                <span id="msgSuccess" class="mail-success">Mail sent :D</span>
             </div>
         </div>
     </form>

@@ -65,10 +65,15 @@ footer {
     font-size: 23px;
 }
 
+.footer-icon-container {
+    >a {
+        height: 30px;
+    }
+}
+
 .footer-icon {
     height: 30px;
     width: 30px;
-    z-index: 1;
     transition: scale 0.2s;
 
     &:hover {
@@ -90,7 +95,7 @@ footer {
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
     footer {
         justify-content: center;
     }

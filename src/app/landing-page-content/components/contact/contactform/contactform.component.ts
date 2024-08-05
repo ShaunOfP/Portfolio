@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { Component, inject, OnInit } from '@angular/core';
+import { Form, FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contactform',
@@ -10,9 +10,14 @@ import { FormsModule, NgForm } from '@angular/forms';
   templateUrl: './contactform.component.html',
   styleUrl: './contactform.component.scss'
 })
-export class ContactformComponent {
+export class ContactformComponent implements OnInit{
   isChecked: boolean = false;
   http = inject(HttpClient);
+  // form: ReactiveFormsModule = new FormGroup({
+  //   name,
+  //   email,
+  //   message
+  // });
 
   contactData = {
     name: "",
@@ -40,6 +45,7 @@ export class ContactformComponent {
           next: (response) => {
 
             ngForm.resetForm();
+            this.userFeedbackAnimation();
           },
           error: (error) => {
             console.error(error);
@@ -58,24 +64,26 @@ export class ContactformComponent {
   }
 
   userFeedbackAnimation() {
-    const curtainContainer = document.getElementById('msgForeground');
-    const curtainLeft = document.getElementById('msgCurtainLeft');
-    const curtainRight = document.getElementById('msgCurtainRight');
     const successMessage = document.getElementById('msgSuccess');
 
 
-    if (curtainContainer && curtainLeft && curtainRight && successMessage) {
-      curtainContainer.style.display = 'flex';
-      curtainLeft.style.display = 'flex';
-      curtainRight.style.display = 'flex';
+    if (successMessage) {
       successMessage.style.display = 'flex';
 
       setTimeout(() => {
-        curtainContainer.style.display = 'none';
-        curtainLeft.style.display = 'none';
-        curtainRight.style.display = 'none';
         successMessage.style.display = 'none';
       }, 1500);
     }
+  }
+
+  ngOnInit(): void {
+    // const form: ReactiveFormsModule = new FormGroup({
+    //   name: new FormControl(form.get('name'), [
+    //     Validators.required,
+    //     Validators.minLength(4),
+    //   ]),
+    //   email: new FormControl(),
+    //   message: new FormControl()
+    // });
   }
 }
