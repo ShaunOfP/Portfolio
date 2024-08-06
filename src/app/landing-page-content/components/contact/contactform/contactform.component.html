@@ -6,7 +6,7 @@
                     class="form-input" #name="ngModel" name="name"
                     [(ngModel)]="contactData.name" required placeholder="Your name">
                 @if(!name.valid && name.touched){
-                <span class="error-message">Please enter a name</span>
+                <span class="error-message">Your name is required</span>
                 }
             </div>
             <div>
@@ -15,7 +15,7 @@
                     name="email" [(ngModel)]="contactData.email" required
                     placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 @if(!email.valid && email.touched){
-                <span class="error-message">Please enter a email</span>
+                <span class="error-message">Your email is required</span>
                 }
             </div>
             <div>
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="btn-container">
-                <button type="submit" disabled [disabled]="!isChecked">Send message :)</button>
+                <button type="submit" disabled [disabled]="!isChecked || contactForm.invalid">Send message :)</button>
                 <span id="msgSuccess" class="mail-success">Mail sent :D</span>
             </div>
         </div>
