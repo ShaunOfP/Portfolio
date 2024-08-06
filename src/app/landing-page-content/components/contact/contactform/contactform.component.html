@@ -1,6 +1,5 @@
 <div class="form-container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        {{ contactForm.form.valid }}
         <div class="form-input-container">
             <div>
                 <input [class.is-valid]="name.valid && name.touched" [class.is-invalid]="!name.valid && name.touched"
