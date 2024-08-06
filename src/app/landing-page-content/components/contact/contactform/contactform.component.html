@@ -1,9 +1,10 @@
 <div class="form-container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        {{ contactForm.form.valid }}
         <div class="form-input-container">
             <div>
                 <input [class.is-valid]="name.valid && name.touched" [class.is-invalid]="!name.valid && name.touched"
-                    class="form-input" #name="ngModel" [ngModelOptions]="{standalone: true}"
+                    class="form-input" #name="ngModel" name="name"
                     [(ngModel)]="contactData.name" required placeholder="Your name">
                 @if(!name.valid && name.touched){
                 <span class="error-message">Please enter a name</span>
@@ -12,7 +13,7 @@
             <div>
                 <input [class.is-valid]="email.valid && email.touched"
                     [class.is-invalid]="!email.valid && email.touched" class="form-input" #email="ngModel"
-                    [ngModelOptions]="{standalone: true}" [(ngModel)]="contactData.email" required
+                    name="email" [(ngModel)]="contactData.email" required
                     placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 @if(!email.valid && email.touched){
                 <span class="error-message">Please enter a email</span>
@@ -21,7 +22,7 @@
             <div>
                 <textarea [class.textbox-is-valid]="message.valid && message.touched && !message.disabled"
                     [class.textbox-is-invalid]="!message.valid && message.touched && !message.disabled"
-                    #message="ngModel" [ngModelOptions]="{standalone: true}" [(ngModel)]="contactData.message" required
+                    #message="ngModel" name="message" [(ngModel)]="contactData.message" required
                     placeholder="Your message"></textarea>
                 @if(!message.valid && message.touched && !message.disabled){
                 <span class="error-message-textarea">Please enter a message</span>

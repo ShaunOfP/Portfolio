@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject, OnInit } from '@angular/core';
-import { Form, FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Component, inject } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contactform',
@@ -10,14 +10,9 @@ import { Form, FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule,
   templateUrl: './contactform.component.html',
   styleUrl: './contactform.component.scss'
 })
-export class ContactformComponent implements OnInit{
+export class ContactformComponent {
   isChecked: boolean = false;
   http = inject(HttpClient);
-  // form: ReactiveFormsModule = new FormGroup({
-  //   name,
-  //   email,
-  //   message
-  // });
 
   contactData = {
     name: "",
@@ -28,7 +23,7 @@ export class ContactformComponent implements OnInit{
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'http://sven-roesgen.de//sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -74,16 +69,5 @@ export class ContactformComponent implements OnInit{
         successMessage.style.display = 'none';
       }, 1500);
     }
-  }
-
-  ngOnInit(): void {
-    // const form: ReactiveFormsModule = new FormGroup({
-    //   name: new FormControl(form.get('name'), [
-    //     Validators.required,
-    //     Validators.minLength(4),
-    //   ]),
-    //   email: new FormControl(),
-    //   message: new FormControl()
-    // });
   }
 }
