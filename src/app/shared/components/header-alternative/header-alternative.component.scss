@@ -1,0 +1,27 @@
+header {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #141D2F;
+}
+
+span {
+    color: white;
+    margin-left: 100px;
+}
+
+@media (max-width: 1245px) {
+    span {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    span {
+        margin-left: 25px;
+    }
+}
