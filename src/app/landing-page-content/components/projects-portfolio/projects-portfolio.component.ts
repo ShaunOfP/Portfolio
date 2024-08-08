@@ -16,7 +16,7 @@ export class ProjectsPortfolioComponent {
       'name': 'Join',
       'languages': 'HTML | CSS | JavaScript',
       'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop function, assign users and categories.',
-      'imgPath': './assets/img/projects/join-laptop.png',
+      'imgPath': './assets/img/projects/join-laptop.svg',
       'livetestPath': '#',
       'githubPath': 'https://github.com/ShaunOfP/Join'
     },
@@ -32,7 +32,7 @@ export class ProjectsPortfolioComponent {
       'name': 'Pokédex',
       'languages': 'HTML | CSS | JavaScript | Api',
       'description': 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      'imgPath': './assets/img/projects/pokedex-laptop.png',
+      'imgPath': './assets/img/projects/pokedex-laptop.svg',
       'livetestPath': '#',
       'githubPath': 'https://github.com/ShaunOfP/Pok-dex'
     },

@@ -40,7 +40,7 @@ export class ContactformComponent {
           next: (response) => {
 
             ngForm.resetForm();
-            this.userFeedbackAnimation();
+            this.addActiveClass();
           },
           error: (error) => {
             console.error(error);
@@ -49,7 +49,7 @@ export class ContactformComponent {
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
-      this.userFeedbackAnimation();
+      this.addActiveClass();
       console.log("success");
     }
   }
@@ -58,16 +58,12 @@ export class ContactformComponent {
     this.isChecked = !this.isChecked;
   }
 
-  userFeedbackAnimation() {
-    const successMessage = document.getElementById('msgSuccess');
-
-
-    if (successMessage) {
-      successMessage.style.display = 'flex';
-
-      setTimeout(() => {
-        successMessage.style.display = 'none';
-      }, 1500);
-    }
+  addActiveClass() {
+    document.querySelector('button[type="submit"]')?.classList.add('btn-active');
+    document.getElementById('msgSuccess')?.classList.add('mail-active');
+    setTimeout(() => {
+      document.querySelector('button[type="submit"]')?.classList.remove('btn-active');
+      document.getElementById('msgSuccess')?.classList.remove('mail-active');
+    }, 2000);
   }
 }
