@@ -7,7 +7,7 @@ section {
 .background-shadow-portfolio-middle {
     position: absolute;
     left: 0px;
-    top: 1100px;
+    top: 225px;
 }
 
 .background-shadow-portfolio-end {
@@ -100,6 +100,10 @@ h1 {
         margin-left: 50px;
         margin-right: 50px;
     }
+
+    .background-shadow-portfolio-middle {
+        width: 600px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -147,13 +151,21 @@ h1 {
     }
 
     .background-shadow-portfolio-middle {
-        top: 1600px;
-        width: 500px;
+        top: 900px;
+        width: 400px;
     }
 
     .background-shadow-portfolio-end {
-        bottom: -220px;
+        bottom: -370px;
         right: -275px;
         height: 600px;
+    }
+}
+
+@media (max-width: 430px) {
+    .background-shadow-portfolio-middle {
+        top: 1000px;
+        width: 300px;
+        left: 40px;
     }
 }

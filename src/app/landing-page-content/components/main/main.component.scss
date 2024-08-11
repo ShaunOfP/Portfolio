@@ -188,12 +188,20 @@ section {
             font-size: 4vw;
         }
     }
+
+    .background-form {
+        top: 31vh;
+    }
 }
 
 @media (max-width: 1380px) {
     .picture-container {
         height: 656px;
         width: 556px;
+    }
+
+    .background-form {
+        top: 33vh;
     }
 }
 
