@@ -6,12 +6,11 @@ body {
   background-color: #141D2F;
 }
 
-@media (min-width: 1920px) and (min-height: 1440px) {
+@media (min-width: 1921px) {
   body {
       max-width: 1920px;
       max-height: 1440px;
       margin: 0 auto;
-      overflow: hidden;
   }
 }
 

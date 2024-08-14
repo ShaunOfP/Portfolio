@@ -186,3 +186,9 @@ nav {
         display: flex;
     }
 }
+
+@media (min-width: 1921px) {
+    section {
+        width: 1920px;
+    }
+}

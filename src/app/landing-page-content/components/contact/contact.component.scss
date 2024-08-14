@@ -176,3 +176,10 @@ a {
         margin-right: 25px;
     }
 }
+
+@media (min-width: 1921px){
+    .contact-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
