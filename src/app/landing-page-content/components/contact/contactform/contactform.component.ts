@@ -20,10 +20,10 @@ export class ContactformComponent {
     message: ""
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'http://sven-roesgen.de//sendMail.php',
+    endPoint: 'http://sven-roesgen.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -38,7 +38,6 @@ export class ContactformComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
             this.addActiveClass();
           },
@@ -50,7 +49,6 @@ export class ContactformComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
       this.addActiveClass();
-      console.log("success");
     }
   }
 
