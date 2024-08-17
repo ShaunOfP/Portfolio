@@ -57,4 +57,8 @@ export class HeaderComponent {
       document.querySelector('.off-screen-menu')?.classList.toggle('active');
     });
   }
+
+  activateLanguageIcon(){
+
+  }
 }

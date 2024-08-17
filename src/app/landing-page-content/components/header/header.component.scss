@@ -20,6 +20,54 @@ section {
     margin-right: 100px;
 }
 
+.language-toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 60px;
+    border-radius: 25px;
+    height: 25px;
+    border: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    background-color: rgb(30, 43, 71);
+
+    >img {
+        height: 25px;
+        width: 25px;
+        border-radius: 30%;
+    }
+}
+
+.language-icon-en {
+    margin-left: -5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.language-icon-ger {
+    margin-right: -4px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.activated {
+    background-color: white;
+}
+
+@keyframes rollToRight {}
+
+@keyframes rollToLeft {}
+
 .line-btn-container {
     >a {
         font-size: 23px;
