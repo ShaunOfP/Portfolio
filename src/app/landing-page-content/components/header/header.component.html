@@ -3,8 +3,10 @@
     <div class="header-btn-container">
         <div class="language-toggle-container">
             <button>
-                <img (click)="activateLanguageIcon('en')" [ngClass]="{'inactivate': isInactive}" class="language-icon-en" src="./assets/img/icon-english-flag.png">
-                <img (click)="activateLanguageIcon('ger')" [ngClass]="{'inactivate': isInactive1}" class="language-icon-ger" src="./assets/img/icon-german-flag.png">
+                <img (click)="activateLanguageIcon('en')" [ngClass]="{'inactivate': isInactive}"
+                    class="language-icon-en" src="./assets/img/icon-english-flag.png">
+                <img (click)="activateLanguageIcon('ger')" [ngClass]="{'inactivate': isInactive1}"
+                    class="language-icon-ger" src="./assets/img/icon-german-flag.png">
             </button>
         </div>
         <div (click)="toggleClass(1)" class="line-btn-container">
@@ -20,21 +22,29 @@
             <div [ngClass]="{'activated-visibility': isClicked3}" id="line3" class="purple-line"></div>
         </div>
     </div>
-    <div class="burger-menu-container">
-        <div class="off-screen-menu">
-            <div>
-                <a href="#about_me">About me</a>
-                <a href="#my_skills">My skills</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+    <div class="mobile">
+        <button>
+            <img (click)="activateLanguageIcon('en')" [ngClass]="{'inactivate': isInactive}" class="language-icon-en"
+                src="./assets/img/icon-english-flag.png">
+            <img (click)="activateLanguageIcon('ger')" [ngClass]="{'inactivate': isInactive1}" class="language-icon-ger"
+                src="./assets/img/icon-german-flag.png">
+        </button>
+        <div class="burger-menu-container">
+            <div class="off-screen-menu">
+                <div>
+                    <a href="#about_me">About me</a>
+                    <a href="#my_skills">My skills</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
+            <nav class="burger-menu">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
-        <nav class="burger-menu">
-            <div>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
     </div>
 </section>

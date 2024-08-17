@@ -1,3 +1,9 @@
 <header>
     <span>Sven</span>
+    <button>
+        <img (click)="activateLanguageIcon('en')" [ngClass]="{'inactivate': isInactive}" class="language-icon-en"
+            src="./assets/img/icon-english-flag.png">
+        <img (click)="activateLanguageIcon('ger')" [ngClass]="{'inactivate': isInactive1}" class="language-icon-ger"
+            src="./assets/img/icon-german-flag.png">
+    </button>
 </header>

@@ -33,7 +33,6 @@ button {
     border: unset;
     display: flex;
     align-items: center;
-    position: relative;
     justify-content: space-between;
     background-color: white;
 
@@ -66,9 +65,9 @@ button {
     border: 1px solid #141D2F;
 }
 
-@keyframes rollToRight {}
-
-@keyframes rollToLeft {}
+.mobile {
+    display: none;
+}
 
 .line-btn-container {
     >a {
@@ -229,6 +228,15 @@ nav {
 
     .header-btn-container {
         display: none;
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+
+        >button {
+            margin-right: 50px;
+        }
     }
 
     .burger-menu-container {
