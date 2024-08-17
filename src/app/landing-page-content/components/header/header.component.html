@@ -3,8 +3,8 @@
     <div class="header-btn-container">
         <div class="language-toggle-container">
             <button>
-                <img (click)="activateLanguageIcon()" class="language-icon-en" src="./assets/img/icon-english-flag.png">
-                <img (click)="activateLanguageIcon()" class="language-icon-ger" src="./assets/img/icon-german-flag.png">
+                <img (click)="activateLanguageIcon('en')" [ngClass]="{'inactivate': isInactive}" class="language-icon-en" src="./assets/img/icon-english-flag.png">
+                <img (click)="activateLanguageIcon('ger')" [ngClass]="{'inactivate': isInactive1}" class="language-icon-ger" src="./assets/img/icon-german-flag.png">
             </button>
         </div>
         <div (click)="toggleClass(1)" class="line-btn-container">

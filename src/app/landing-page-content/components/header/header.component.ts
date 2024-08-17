@@ -12,6 +12,8 @@ export class HeaderComponent {
   isClicked: boolean = false;
   isClicked2: boolean = false;
   isClicked3: boolean = false;
+  isInactive: boolean = false;
+  isInactive1: boolean = true;
 
   toggleClass(id: number) {
     switch (id) {
@@ -58,7 +60,16 @@ export class HeaderComponent {
     });
   }
 
-  activateLanguageIcon(){
-
+  activateLanguageIcon(id: string) {
+    switch (id) {
+      case id = "en":
+        this.isInactive = false;
+        this.isInactive1 = true;
+        break;
+      case id = "ger":
+        this.isInactive = true;
+        this.isInactive1 = false;
+        break;
+    }
   }
 }
