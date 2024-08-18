@@ -124,3 +124,10 @@ footer {
         margin-bottom: 55px !important;
     }
 }
+
+@media (min-width: 1921px) {
+    footer {
+        margin-left: -300px;
+        margin-right: -300px;
+    }
+}
