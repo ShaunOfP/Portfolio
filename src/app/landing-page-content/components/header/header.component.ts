@@ -1,19 +1,26 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
+
 export class HeaderComponent {
   isClicked: boolean = false;
   isClicked2: boolean = false;
   isClicked3: boolean = false;
   isInactive: boolean = false;
   isInactive1: boolean = true;
+
+  constructor(public translate: TranslateService){
+
+  }
 
   toggleClass(id: number) {
     switch (id) {
@@ -60,15 +67,17 @@ export class HeaderComponent {
     });
   }
 
-  activateLanguageIcon(id: string) {
+  switchLanguage(id: string) {
     switch (id) {
       case id = "en":
         this.isInactive = false;
         this.isInactive1 = true;
+        this.translate.use('en');
         break;
       case id = "ger":
         this.isInactive = true;
         this.isInactive1 = false;
+        this.translate.use('ger');
         break;
     }
   }

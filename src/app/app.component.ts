@@ -9,6 +9,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { ProjectsPortfolioComponent } from './landing-page-content/components/projects-portfolio/projects-portfolio.component';
 import { ContactComponent } from './landing-page-content/components/contact/contact.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,6 +17,7 @@ import { ContactComponent } from './landing-page-content/components/contact/cont
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
 export class AppComponent{
   title = 'portfolio';
 }
