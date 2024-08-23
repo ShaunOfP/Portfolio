@@ -11,7 +11,7 @@
             <a class="mobile-imprint" href="imprint">Imprint</a>
         </div>
         <div class="imprint-container">
-            <a (mouseenter)="mouseOverTrue()" (mouseleave)="mouseOverFalse()" href="imprint">Imprint</a>
+            <a (mouseenter)="mouseOverTrue()" (mouseleave)="mouseOverFalse()" href="imprint">{{ "footer-imprint" | translate }}</a>
             <div [ngClass]="{'hidden': !mouseOver}" class="blue-line"></div>
         </div>
     </div>

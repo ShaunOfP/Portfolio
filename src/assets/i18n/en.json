@@ -19,9 +19,15 @@
     "contact-description": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
     "contact-contactme": "Need a Frontend developer? <b>Contact me!</b>",
     "contactform-name": "Your name",
+    "contactform-error-name": "Your name is required",
     "contactform-mail": "Your email",
+    "contactform-error-mail": "Your email is required",
     "contactform-message": "Your message",
-    "contactform-pp": "I've read the <a href='privacy-policy' class='purple-text'>privacy policy</a> and agree to the processing of my data as outlined.",
+    "contactform-error-message": "Please enter a message",
+    "contactform-pp-first": "I've read the",
+    "contactform-pp-purple": "privacy policy",
+    "contactform-pp-second": "and agree to the processing of my data as outlined.",
     "contactform-button": "Send message :)",
+    "contactform-success": "Mail sent :D",
     "footer-imprint": "Imprint"
 }

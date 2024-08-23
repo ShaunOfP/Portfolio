@@ -199,7 +199,8 @@ label {
 
 button {
     height: 80%;
-    width: 80%;
+    max-width: 87%;
+    min-width: 80%;
     position: absolute;
     padding: 0;
     display: flex;
@@ -230,16 +231,17 @@ button {
 }
 
 .btn-active {
-    left: -240px;
+    left: -259px;
 }
 
 .mail-success {
     position: relative;
     transition: all .35s ease-out;
     height: 80%;
-    width: 80%;
+    max-width: 87%;
+    min-width: 80%;
     border-radius: 10px;
-    left: -240px;
+    left: -254px;
     color: white;
     font-size: 23px;
     z-index: 1;

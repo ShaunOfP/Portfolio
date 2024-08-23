@@ -4,7 +4,7 @@
         <div class="project-description">
             <h3>{{ projectData.name }}</h3>
             <h4>{{ projectData.languages }}</h4>
-            <p>{{ projectData.description }}</p>
+            <p>{{ projectData.description | translate }}</p>
         </div>
         <div class="project-btns-container">
             <a href="{{ projectData.livetestPath }}" target="_blank" class="test-btn">Live Test</a>

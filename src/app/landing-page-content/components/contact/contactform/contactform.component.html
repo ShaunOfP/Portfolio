@@ -3,28 +3,28 @@
         <div class="form-input-container">
             <div>
                 <input [class.is-valid]="name.valid && name.touched" [class.is-invalid]="!name.valid && name.touched"
-                    class="form-input" #name="ngModel" name="name"
-                    [(ngModel)]="contactData.name" required placeholder="Your name">
+                    class="form-input" #name="ngModel" name="name" [(ngModel)]="contactData.name" required
+                    placeholder="{{ 'contactform-name' | translate }}">
                 @if(!name.valid && name.touched){
-                <span class="error-message">Your name is required</span>
+                <span class="error-message">{{ "contactform-error-name" | translate }}</span>
                 }
             </div>
             <div>
                 <input [class.is-valid]="email.valid && email.touched"
-                    [class.is-invalid]="!email.valid && email.touched" class="form-input" #email="ngModel"
-                    name="email" [(ngModel)]="contactData.email" required
-                    placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    [class.is-invalid]="!email.valid && email.touched" class="form-input" #email="ngModel" name="email"
+                    [(ngModel)]="contactData.email" required placeholder="{{ 'contactform-mail' | translate }}"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                 @if(!email.valid && email.touched){
-                <span class="error-message">Your email is required</span>
+                <span class="error-message">{{ "contactform-error-mail" | translate }}</span>
                 }
             </div>
             <div>
                 <textarea [class.textbox-is-valid]="message.valid && message.touched && !message.disabled"
                     [class.textbox-is-invalid]="!message.valid && message.touched && !message.disabled"
                     #message="ngModel" name="message" [(ngModel)]="contactData.message" required
-                    placeholder="Your message"></textarea>
+                    placeholder="{{ 'contactform-message' | translate }}"></textarea>
                 @if(!message.valid && message.touched && !message.disabled){
-                <span class="error-message-textarea">Please enter a message</span>
+                <span class="error-message-textarea">{{ "contactform-error-message" | translate }}</span>
                 }
             </div>
         </div>
@@ -33,15 +33,15 @@
                 <div class="custom-checkbox">
                     <input #checkbox="ngModel" [ngModelOptions]="{standalone: true}" type="checkbox" id="checkbox"
                         [(ngModel)]="isChecked">
-                    <label for="checkbox">I've read the <a href="privacy-policy" class="purple-text">privacy policy</a>
-                        and
-                        agree to the
-                        processing of my data as outlined.</label>
+                    <label for="checkbox">{{ "contactform-pp-first" | translate }} <a href='privacy-policy'
+                            class='purple-text'>{{ "contactform-pp-purple" | translate }}</a> {{ "contactform-pp-second"
+                        | translate }}</label>
                 </div>
             </div>
             <div class="btn-container">
-                <button type="submit" disabled [disabled]="!isChecked || contactForm.invalid">Send message :)</button>
-                <span id="msgSuccess" class="mail-success">Mail sent :D</span>
+                <button type="submit" disabled [disabled]="!isChecked || contactForm.invalid">{{ "contactform-button" |
+                    translate }}</button>
+                <span id="msgSuccess" class="mail-success">{{ "contactform-success" | translate }}</span>
             </div>
         </div>
     </form>

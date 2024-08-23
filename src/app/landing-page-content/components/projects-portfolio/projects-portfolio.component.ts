@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { ProjectBlueprintComponent } from './project-blueprint/project-blueprint.component';
 import { ProjectBlueprintMirroredComponent } from './project-blueprint-mirrored/project-blueprint-mirrored.component';
-import { Item } from '../../../../models/item.model'; 
+import { Item } from '../../../../models/item.model';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects-portfolio',
   standalone: true,
-  imports: [ProjectBlueprintComponent, ProjectBlueprintMirroredComponent],
+  imports: [ProjectBlueprintComponent, ProjectBlueprintMirroredComponent, TranslateModule],
   templateUrl: './projects-portfolio.component.html',
   styleUrl: './projects-portfolio.component.scss'
 })

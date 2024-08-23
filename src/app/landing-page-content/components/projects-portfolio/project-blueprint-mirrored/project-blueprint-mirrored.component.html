@@ -3,7 +3,7 @@
         <div class="project-description">
             <h3>{{ projectDataMirrored.name }}</h3>
             <h4>{{ projectDataMirrored.languages }}</h4>
-            <p>{{ projectDataMirrored.description }}</p>
+            <p>{{ projectDataMirrored.description | translate }}</p>
         </div>
         <div class="project-btns-container">
             <a href="{{ projectDataMirrored.livetestPath }}" target="_blank" class="test-btn">Live Test</a>
