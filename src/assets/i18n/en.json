@@ -1,7 +1,6 @@
 {
     "header-about-me": "About me",
-    "header-skills": "Skills",
-    "header-portfolio": "Portfolio",
+    "header-contact": "Contact",
     "main-button": "Let's talk!",
     "main-scroll": "Scroll down",
     "aboutme-headline": "About me",
@@ -22,5 +21,7 @@
     "contactform-name": "Your name",
     "contactform-mail": "Your email",
     "contactform-message": "Your message",
-    "contactform-pp": "I've read the <a href='privacy-policy' class='purple-text'>privacy policy</a> and agree to the processing of my data as outlined."
+    "contactform-pp": "I've read the <a href='privacy-policy' class='purple-text'>privacy policy</a> and agree to the processing of my data as outlined.",
+    "contactform-button": "Send message :)",
+    "footer-imprint": "Imprint"
 }

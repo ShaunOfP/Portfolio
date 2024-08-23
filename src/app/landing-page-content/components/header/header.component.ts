@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-
+import { LanguageService } from '../../../shared/components/language.service';
 
 @Component({
   selector: 'app-header',
@@ -17,10 +17,13 @@ export class HeaderComponent {
   isClicked3: boolean = false;
   isInactive: boolean = false;
   isInactive1: boolean = true;
+  currentLanguage: string = 'en';
 
-  constructor(public translate: TranslateService){
 
+  constructor(public translate: TranslateService, public languageService: LanguageService) {
+    
   }
+
 
   toggleClass(id: number) {
     switch (id) {
@@ -42,7 +45,20 @@ export class HeaderComponent {
     }
   }
 
+
   ngOnInit() {
+    this.smoothScroll();
+
+    this.toggleBurgerMenu();
+
+    this.languageService.language$.subscribe(language => {
+      this.currentLanguage = language;
+      this.translate.use(language);
+    });
+  }
+
+
+  smoothScroll(){
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', (e) => {
         e.preventDefault();
@@ -58,7 +74,10 @@ export class HeaderComponent {
         }
       });
     });
+  }
 
+
+  toggleBurgerMenu(){
     let burgerMenu = document.querySelector('.burger-menu');
 
     burgerMenu?.addEventListener('click', () => {
@@ -67,17 +86,17 @@ export class HeaderComponent {
     });
   }
 
-  switchLanguage(id: string) {
-    switch (id) {
-      case id = "en":
+
+  switchLanguage(language: string) {
+    this.languageService.changeLanguage(language);
+    switch (language) {
+      case language = "en":
         this.isInactive = false;
         this.isInactive1 = true;
-        this.translate.use('en');
         break;
-      case id = "ger":
+      case language = "ger":
         this.isInactive = true;
         this.isInactive1 = false;
-        this.translate.use('ger');
         break;
     }
   }

@@ -13,11 +13,11 @@ import { ContactComponent } from './landing-page-content/components/contact/cont
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet ,HeaderComponent, MainComponent, AboutMeComponent, MySkillsComponent, ProjectsPortfolioComponent, ContactComponent, FooterComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, MainComponent, AboutMeComponent, MySkillsComponent, ProjectsPortfolioComponent, ContactComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 
-export class AppComponent{
+export class AppComponent {
   title = 'portfolio';
 }
