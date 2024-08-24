@@ -16,7 +16,7 @@ export class ProjectsPortfolioComponent {
     {
       'name': 'Join',
       'languages': 'HTML | CSS | JavaScript',
-      'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop function, assign users and categories.',
+      'description': 'portfolio-join-description',
       'imgPath': './assets/img/projects/join-laptop.png',
       'livetestPath': 'http://join.sven-roesgen.de/',
       'githubPath': 'https://github.com/ShaunOfP/Join'
@@ -24,7 +24,7 @@ export class ProjectsPortfolioComponent {
     {
       'name': 'El Pollo Loco',
       'languages': 'HTML | CSS | JavaScript',
-      'description': 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      'description': 'portfolio-polloloco-description',
       'imgPath': './assets/img/projects/el-pollo-loco-laptop.png',
       'livetestPath': 'http://elpolloloco.sven-roesgen.de/',
       'githubPath': 'https://github.com/ShaunOfP/El-Pollo-Loco'
@@ -32,7 +32,7 @@ export class ProjectsPortfolioComponent {
     {
       'name': 'Pokédex',
       'languages': 'HTML | CSS | JavaScript | Api',
-      'description': 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      'description': 'portfolio-pokedex-description',
       'imgPath': './assets/img/projects/pokedex-laptop.png',
       'livetestPath': 'http://pokedex.sven-roesgen.de/',
       'githubPath': 'https://github.com/ShaunOfP/Pok-dex'
