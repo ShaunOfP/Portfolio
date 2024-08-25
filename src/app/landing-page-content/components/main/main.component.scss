@@ -168,9 +168,26 @@ section {
 
 @media (min-width: 1921px) {
     .background-form {
-        margin-left: -300px;
         width: 100vw;
         top: 45px;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .picture-container {
+        margin: 0;
+    }
+
+    .main-bottom {
+        max-width: 1920px;
+        left: auto;
+    }
+
+    .scroll-down {
+        right: 110px;
     }
 }
 

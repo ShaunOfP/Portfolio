@@ -4,14 +4,17 @@
             <p class="footer-headline">Sven</p>
             <p class="footer-middle">© Sven Rösgen 2024</p>
             <div class="footer-icon-container">
-                <a href="https://github.com/ShaunOfP" target="_blank"><img class="footer-icon" src="./assets/img/github.svg" alt="github"></a>
+                <a href="https://github.com/ShaunOfP" target="_blank"><img class="footer-icon"
+                        src="./assets/img/github.svg" alt="github"></a>
                 <a href="#contact"><img class="footer-icon" src="./assets/img/mail.svg" alt="mail"></a>
-                <a href="https://www.linkedin.com/in/sven-r%C3%B6sgen-046ab9320/" target="_blank"><img class="footer-icon" src="./assets/img/linkedin.svg" alt="linkedIn"></a>
+                <a href="https://www.linkedin.com/in/sven-r%C3%B6sgen-046ab9320/" target="_blank"><img
+                        class="footer-icon" src="./assets/img/linkedin.svg" alt="linkedIn"></a>
             </div>
-            <a class="mobile-imprint" href="imprint">Imprint</a>
+            <a class="mobile-imprint" href="imprint">{{ "footer-imprint" | translate }}</a>
         </div>
         <div class="imprint-container">
-            <a (mouseenter)="mouseOverTrue()" (mouseleave)="mouseOverFalse()" href="imprint">{{ "footer-imprint" | translate }}</a>
+            <a (mouseenter)="mouseOverTrue()" (mouseleave)="mouseOverFalse()" href="imprint">{{ "footer-imprint" |
+                translate }}</a>
             <div [ngClass]="{'hidden': !mouseOver}" class="blue-line"></div>
         </div>
     </div>
