@@ -32,10 +32,10 @@
         <div class="burger-menu-container">
             <div class="off-screen-menu">
                 <div>
-                    <a href="#about_me">{{ "header-about-me" | translate }}</a>
-                    <a href="#my_skills">My skills</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">{{ "header-contact" | translate }}</a>
+                    <a (click)="closeBurgerMenuOnClick()" href="#about_me">{{ "header-about-me" | translate }}</a>
+                    <a (click)="closeBurgerMenuOnClick()" href="#my_skills">My skills</a>
+                    <a (click)="closeBurgerMenuOnClick()" href="#portfolio">Portfolio</a>
+                    <a (click)="closeBurgerMenuOnClick()" href="#contact">{{ "header-contact" | translate }}</a>
                 </div>
             </div>
             <nav class="burger-menu">

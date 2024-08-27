@@ -21,7 +21,7 @@ export class HeaderComponent {
 
 
   constructor(public translate: TranslateService, public languageService: LanguageService) {
-    
+
   }
 
 
@@ -58,7 +58,7 @@ export class HeaderComponent {
   }
 
 
-  smoothScroll(){
+  smoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', (e) => {
         e.preventDefault();
@@ -77,13 +77,21 @@ export class HeaderComponent {
   }
 
 
-  toggleBurgerMenu(){
+  toggleBurgerMenu() {
     let burgerMenu = document.querySelector('.burger-menu');
 
     burgerMenu?.addEventListener('click', () => {
       burgerMenu?.classList.toggle('active');
       document.querySelector('.off-screen-menu')?.classList.toggle('active');
     });
+  }
+
+
+  closeBurgerMenuOnClick() {
+    let burgerMenu = document.querySelector('.burger-menu');
+
+    burgerMenu?.classList.remove('active');
+    document.querySelector('.off-screen-menu')?.classList.remove('active');
   }
 
 
