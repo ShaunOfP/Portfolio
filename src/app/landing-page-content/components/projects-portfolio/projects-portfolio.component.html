@@ -14,9 +14,9 @@
     <div class="project-container">
         @for(project of projects; track project.name; let index = $index){
         @if(index % 2 == 0){
-        <app-project-blueprint [projectData]="project"></app-project-blueprint>
+        <app-project-blueprint [projectData]="project" class="hidden"></app-project-blueprint>
         } @else {
-        <app-project-blueprint-mirrored [projectDataMirrored]="project"></app-project-blueprint-mirrored>
+        <app-project-blueprint-mirrored [projectDataMirrored]="project" class="hidden"></app-project-blueprint-mirrored>
         }
         }
     </div>

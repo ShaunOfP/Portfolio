@@ -5,6 +5,15 @@ section {
     overflow: clip;
 }
 
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
 .background-shadow-portfolio-middle {
     position: absolute;
     left: 0px;
