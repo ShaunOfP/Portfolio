@@ -9,7 +9,7 @@
                     class="language-icon-ger" src="./assets/img/icon-german-flag.png">
             </button>
         </div>
-        <div (click)="toggleClass(1)" class="line-btn-container"><!--/angular-projects/portfolio/-->
+        <div (click)="toggleClass(1)" class="line-btn-container">
             <a [ngClass]="{'activated-color': isClicked}" href="/#about_me">{{ "header-about-me" | translate }}</a>
             <div [ngClass]="{'activated-visibility': isClicked}" id="line1" class="purple-line"></div>
         </div>
