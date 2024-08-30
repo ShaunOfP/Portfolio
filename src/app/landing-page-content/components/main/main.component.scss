@@ -99,10 +99,14 @@ section {
     color: white;
     z-index: 4;
     bottom: 200px;
-
+    
     >img {
         transform: rotate(-90deg);
     }
+}
+
+.jump-animation{
+    animation: jump 1s;
 }
 
 .button {
@@ -155,6 +159,31 @@ section {
 
 .second-background-form {
     display: none;
+}
+
+@keyframes jump {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0) rotate(90deg);
+        -ms-transform: translateY(0 rotate(90deg));
+        transform: translateY(0) rotate(90deg);
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px) rotate(90deg);
+        -ms-transform: translateY(-30px) rotate(90deg);
+        transform: translateY(-30px) rotate(90deg);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px) rotate(90deg);
+        -ms-transform: translateY(-15px) rotate(90deg);
+        transform: translateY(-15px) rotate(90deg);
+    }
 }
 
 @media (min-width: 900px) and (max-width: 1700px) {

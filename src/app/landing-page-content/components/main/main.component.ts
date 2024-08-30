@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterContentInit, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -8,6 +8,8 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
-export class MainComponent {
-
+export class MainComponent implements AfterContentInit {
+  ngAfterContentInit() {
+    document.querySelector('.scroll-down')?.classList.add('jump-animation');
+  }
 }
