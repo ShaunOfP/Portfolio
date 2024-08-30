@@ -10,10 +10,12 @@
                 <a href="https://www.linkedin.com/in/sven-r%C3%B6sgen-046ab9320/" target="_blank"><img
                         class="footer-icon" src="./assets/img/linkedin.svg" alt="linkedIn"></a>
             </div>
-            <a class="mobile-imprint" href="imprint">{{ "footer-imprint" | translate }}</a>
+            <a class="mobile-imprint" routerLink="/imprint" routerLinkActive="active" ariaCurrentWhenActive="page">{{
+                "footer-imprint" | translate }}</a>
         </div>
         <div class="imprint-container">
-            <a (mouseenter)="mouseOverTrue()" (mouseleave)="mouseOverFalse()" href="imprint">{{ "footer-imprint" |
+            <a (mouseenter)="mouseOverTrue()" (mouseleave)="mouseOverFalse()" routerLink="/imprint"
+                routerLinkActive="active" ariaCurrentWhenActive="page">{{ "footer-imprint" |
                 translate }}</a>
             <div [ngClass]="{'hidden': !mouseOver}" class="blue-line"></div>
         </div>

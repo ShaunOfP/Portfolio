@@ -33,8 +33,9 @@
                 <div class="custom-checkbox">
                     <input #checkbox="ngModel" [ngModelOptions]="{standalone: true}" type="checkbox" id="checkbox"
                         [(ngModel)]="isChecked">
-                    <label for="checkbox">{{ "contactform-pp-first" | translate }} <a href='privacy-policy'
-                            class='purple-text'>{{ "contactform-pp-purple" | translate }}</a> {{ "contactform-pp-second"
+                    <label for="checkbox">{{ "contactform-pp-first" | translate }} <a routerLink="/privacy-policy"
+                            routerLinkActive="active" ariaCurrentWhenActive="page" class='purple-text'>{{
+                            "contactform-pp-purple" | translate }}</a> {{ "contactform-pp-second"
                         | translate }}</label>
                 </div>
             </div>
