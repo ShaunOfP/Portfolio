@@ -37,6 +37,14 @@ export class ProjectsPortfolioComponent implements AfterViewInit {
       'livetestPath': 'http://pokedex.sven-roesgen.de/',
       'githubPath': 'https://github.com/ShaunOfP/Pok-dex'
     },
+    {
+      'name': 'Da-Bubble',
+      'languages': 'Angular | TypeScript | Firebase',
+      'description': 'portfolio-dabubble-description',
+      'imgPath': './assets/img/projects/dabubble-laptop.png',
+      'livetestPath': 'http://dabubble.sven-roesgen.de/',
+      'githubPath': 'https://github.com/ShaunOfP/DaBubble'
+    },
   ];
 
   elementsArray: Element[] = [];

@@ -14,6 +14,7 @@
     "portfolio-join-description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop function, assign users and categories.",
     "portfolio-polloloco-description": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
     "portfolio-pokedex-description": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+    "portfolio-dabubble-description": "DA-Bubble is a Slack clone that uses a Firebase database to store its data",
     "contact-headline": "Contact",
     "contact-question": "Got a problem to solve?",
     "contact-description": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
