@@ -29,14 +29,14 @@ export class ProjectsPortfolioComponent implements AfterViewInit {
       'livetestPath': 'http://elpolloloco.sven-roesgen.de/',
       'githubPath': 'https://github.com/ShaunOfP/El-Pollo-Loco'
     },
-    {
-      'name': 'Pokédex',
-      'languages': 'HTML | CSS | JavaScript | Api',
-      'description': 'portfolio-pokedex-description',
-      'imgPath': './assets/img/projects/pokedex-laptop.png',
-      'livetestPath': 'http://pokedex.sven-roesgen.de/',
-      'githubPath': 'https://github.com/ShaunOfP/Pok-dex'
-    },
+    // {
+    //   'name': 'Pokédex',
+    //   'languages': 'HTML | CSS | JavaScript | Api',
+    //   'description': 'portfolio-pokedex-description',
+    //   'imgPath': './assets/img/projects/pokedex-laptop.png',
+    //   'livetestPath': 'http://pokedex.sven-roesgen.de/',
+    //   'githubPath': 'https://github.com/ShaunOfP/Pok-dex'
+    // },
     {
       'name': 'Da-Bubble',
       'languages': 'Angular | TypeScript | Firebase',
